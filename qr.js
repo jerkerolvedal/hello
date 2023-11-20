@@ -1,4 +1,5 @@
-
+<html>
+<head>
 <SCRIPT language="javascript">
 var a=0;
 var b=0;
@@ -17,5 +18,8 @@ setTimeout ('bouge()',50) // TEXTENS HASTIGHET
 <body bgcolor="#3C3C3C"onload="bouge()">
 </DIV>
 <DIV ALIGN="left"><div id="mess"style="margin-left:100;margin-right:600;color:lime"></div></div>
+<BR><BR>
  
 </form></DIV>
+ 
+</body></html>
