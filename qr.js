@@ -1,5 +1,4 @@
-<html>
-<head>
+
 <SCRIPT language="javascript">
 var a=0;
 var b=0;
@@ -21,5 +20,3 @@ setTimeout ('bouge()',50) // TEXTENS HASTIGHET
 <BR><BR>
  
 </form></DIV>
- 
-</body></html>
