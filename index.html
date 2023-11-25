@@ -6,9 +6,43 @@
     <meta name="description" content="a website">
     <meta name="keywords" content="jerker; lol">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <title></title> <!-- Empty title -->
+    
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
 
-<title></title> <!-- Empty title -->
-}
+        h1 {
+            text-align: center;
+            margin: 0; /* Remove default margin */
+        }
+
+        #mess-container {
+            margin: 20px 0 0 20px; /* Adjust margins as needed */
+            width: 50vw; /* Set the width to 50% of the viewport width */
+            overflow-wrap: break-word; /* Allow words to break onto the next line */
+        }
+
+        #mess {
+            color: black;
+            font-family: Verdana, sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #000; /* Optional: Add a blinking cursor effect */
+        }
+
+        a {
+            font-family: Verdana, sans-serif;
+            display: block;
+            text-align: center;
+            margin-top: 10px; /* Adjust as needed */
+        }
+    </style>
     
     <script language="javascript">
         var a = 0;
@@ -28,29 +62,19 @@
             bouge();
         };
     </script>
-    
-    <style>
-        body {
-            font-family: Verdana, sans-serif;
-        }
-
-        a {
-            font-family: Verdana, sans-serif;
-        }
-    </style>
 </head>
 
 <body>
     <h1>Hello.</h1>
 
-    <div align="left">
-        <div id="mess" style="margin-left: 100; margin-right: 100; color: black; font-family: Verdana, sans-serif;"></div>
+    <div id="mess-container">
+        <div id="mess"></div>
     </div>
 
     <a href="sms:46708331921">by jerker.</a><br>
 
     <a href="sms:46708331921">
-        <img src="RQ.png" alt="" style="width: 200px; height: 200px;">
+        <img src="RQ.png" alt="" style="width: 200px; height: 200px; display: block; margin: 0 auto;">
     </a>
 </body>
 </html>
