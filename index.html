@@ -7,6 +7,8 @@
     <meta name="keywords" content="jerker; lol">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     
+    <title>Your Title Here</title>
+    
     <script language="javascript">
         var a = 0;
         var b = 0;
@@ -19,15 +21,24 @@
             }
             setTimeout('bouge()', 70); // TEXTENS HASTIGHET
         }
+        
+        // Call the bouge function after the page has loaded
+        window.onload = function () {
+            bouge();
+        };
     </script>
+    
+    <style>
+        /* Add your styles here if needed */
+    </style>
 </head>
 
-<body onload="bouge()">
+<body>
+    <h1>Hello.</h1>
+
     <div align="left">
         <div id="mess" style="margin-left: 100; margin-right: 100; color: black; font-family: verdana"></div>
     </div>
-
-    <h1>Hello.</h1>
 
     <p>Here is a wall of text.
         _   _   __  _   _      __  ___   _____ _____   _______<br>
