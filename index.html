@@ -1,46 +1,45 @@
-<html>
- <head>
-     <meta name="author" content="jerker">
-     <meta name="description" content="a website">
-     <meta name="keywords" content="jerker; lol">
-     <meta name="viewport" content="width=device-width,initial-scale=1"/> 
-  
-<SCRIPT language="javascript">
-var a=0;
-var b=0;
-var cha="Thanks for visiting. I built this page over the weekend of Nov, 2023 to play with HTML effects. If you wanna chat products or are interested in design, reach out to me via a";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jerker">
+    <meta name="description" content="a website">
+    <meta name="keywords" content="jerker; lol">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <script language="javascript">
+        var a = 0;
+        var b = 0;
+        var cha = "Thanks for visiting. I built this page over the weekend of Nov, 2023 to play with HTML effects. If you wanna chat products or are interested in design, reach out to me via a";
 
-function bouge()
-{
-if (b<cha.length+10)
-{
-b++;document.all.mess.innerText=cha.substring(a,b);
-}
-setTimeout ('bouge()',70) // TEXTENS HASTIGHET
-}
-</SCRIPT>
- </head>
-  
-<body>
-<h1>Hello.</h1>
- 
-<body onload="bouge()>
- <DIV ALIGN="left">
-  <div id="mess"style="margin-left:100;margin-right:100;color:black;font-family:verdana"></div></DIV>
- 
-<a href="sms:46708331921">by jerker.</a> <br>
+        function bouge() {
+            if (b < cha.length + 10) {
+                b++;
+                document.getElementById("mess").innerText = cha.substring(a, b);
+            }
+            setTimeout('bouge()', 70); // TEXTENS HASTIGHET
+        }
+    </script>
+</head>
 
-<a href="sms:46708331921">
-  <img src="RQ.png" alt="" style="width:200px;height:200px;">
-</a>
+<body onload="bouge()">
+    <div align="left">
+        <div id="mess" style="margin-left: 100; margin-right: 100; color: black; font-family: verdana"></div>
+    </div>
 
+    <h1>Hello.</h1>
 
- <p> Here is a wall of text.
-  _   _   __  _   _      __  ___   _____ _____   _______<BR>
-| | | | /  \| | | |    /__\| __| |_   _| __\ \_/ /_   _|<BR>
-| 'V' || /\ | |_| |_  | \/ | _|    | | | _| > , <  | |  <BR>
-!_/ \_!|_||_|___|___|  \__/|_|     |_| |___/_/ \_\ |_|  <BR>
+    <p>Here is a wall of text.
+        _   _   __  _   _      __  ___   _____ _____   _______<br>
+        | | | | /  \| | | |    /__\| __| |_   _| __\ \_/ /_   _|<br>
+        | 'V' || /\ | |_| |_  | \/ | _|    | | | _| > , <  | |  <br>
+        !_/ \_!|_||_|___|___|  \__/|_|     |_| |___/_/ \_\ |_|  <br>
+    </p>
 
- </p>
- </body>
+    <a href="sms:46708331921">by jerker.</a><br>
+
+    <a href="sms:46708331921">
+        <img src="RQ.png" alt="" style="width: 200px; height: 200px;">
+    </a>
+</body>
 </html>
