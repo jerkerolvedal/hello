@@ -7,7 +7,7 @@
     <meta name="keywords" content="jerker; lol">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     
-    <title>qr</title> <!-- qr -->
+    <title></title> <!-- Empty title -->
     
     <style>
         body {
@@ -25,11 +25,22 @@
         #mess-container {
             margin: 0 0 20px 20px; /* Adjust margins as needed */
             width: 50vw; /* Set the width to 50% of the viewport width */
+            overflow-wrap: break-word; /* Allow words to break onto the next line */
         }
 
         #mess {
             color: black;
             font-family: Verdana, sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #000; /* Optional: Add a blinking cursor effect */
+            animation: blinkCursor 1s infinite; /* Blinking cursor animation */
+        }
+
+        @keyframes blinkCursor {
+            50% {
+                border-color: transparent; /* Blinking effect */
+            }
         }
 
         a {
