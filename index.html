@@ -10,6 +10,26 @@
     <title></title> <!-- Empty title -->
     
     <style>
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .blinking-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 20px;
+      background-color: black;
+      animation: blink 1s step-end infinite;
+    }
+    
         body {
             font-family: Verdana, sans-serif;
             margin: 0;
@@ -32,6 +52,7 @@
         #mess {
             color: black;
             font-family: Verdana, sans-serif;
+            cursor: 
         }
 
         a {
@@ -65,7 +86,7 @@
     <h1>Hello.</h1>
 
     <div id="mess-container">
-        <div id="mess"></div>
+        <div id="mess"></div> <span class="blinking-cursor"></span>
     </div>
 
     <a href="sms:46708331921">by jerker.</a><br>
