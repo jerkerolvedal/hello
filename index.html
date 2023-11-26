@@ -25,14 +25,19 @@
         #mess-container {
             margin: 0 0 20px 20px; /* Adjust margins as needed */
             width: 50vw; /* Set the width to 50% of the viewport width */
-            animation: blinkCursor 0.8s steps(1) infinite; /* Blinking cursor animation */
+            position: relative;
         }
 
         #mess {
             color: black;
             font-family: Verdana, sans-serif;
-            border-right: 2px solid #000; /* Cursor styling */
-            display: block-inline;
+            display: inline-block;
+        }
+
+        #cursor {
+            display: inline-block;
+            border-right: 2px solid black; /* Cursor style */
+            animation: blinkCursor 1s infinite; /* Blinking animation */
         }
 
         @keyframes blinkCursor {
@@ -48,7 +53,7 @@
         }
     </style>
     
-    <script language="javascript">
+    <script>
         var a = 0;
         var b = 0;
         var cha = "Thanks for visiting. I built this page over the weekend of Nov, 2023 to play with HTML effects. If you wanna chat products or are interested in design, reach out to me via a message. Sen skriver vi ut så att vi får ett tredje linjevbryte för hoppnignsvis.";
@@ -57,10 +62,13 @@
             if (b < cha.length + 10) {
                 b++;
                 document.getElementById("mess").innerText = cha.substring(a, b);
+                document.getElementById("cursor").style.display = "inline-block"; // Show cursor
+            } else {
+                document.getElementById("cursor").style.display = "none"; // Hide cursor after text completion
             }
-            setTimeout('bouge()', 70); // TEXTENS HASTIGHET
+            setTimeout(bouge, 70); // TEXTENS HASTIGHET
         }
-        
+
         // Call the bouge function after the page has loaded
         window.onload = function () {
             bouge();
@@ -73,6 +81,7 @@
 
     <div id="mess-container">
         <div id="mess"></div>
+        <div id="cursor"></div>
     </div>
 
     <a href="sms:46708331921">by jerker.</a><br>
