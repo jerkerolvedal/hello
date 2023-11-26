@@ -20,6 +20,7 @@
         h1 {
             text-align: left;
             margin: 0 0 20px 20px; /* Adjust margins as needed */
+            font-family: Arial, sans-serif;
         }
 
         #mess-container {
@@ -31,19 +32,6 @@
         #mess {
             color: black;
             font-family: Verdana, sans-serif;
-            display: inline-block;
-        }
-
-        #cursor {
-            display: inline-block;
-            border-right: 2px solid black; /* Cursor style */
-            animation: blinkCursor 1s infinite; /* Blinking animation */
-        }
-
-        @keyframes blinkCursor {
-            50% {
-                border-color: transparent; /* Blinking effect */
-            }
         }
 
         a {
@@ -62,7 +50,6 @@
             if (b < cha.length + 10) {
                 b++;
                 document.getElementById("mess").innerText = cha.substring(a, b);
-                document.getElementById("cursor").style.display = "inline-block"; // Show cursor
 		}
             setTimeout(bouge, 70); // TEXTENS HASTIGHET
         }
@@ -79,7 +66,6 @@
 
     <div id="mess-container">
         <div id="mess"></div>
-        <div id="cursor"></div>
     </div>
 
     <a href="sms:46708331921">by jerker.</a><br>
