@@ -24,7 +24,7 @@
     }
      .parent {
   	display: flex;
-  	flex-direction: row;
+  	flex-direction: row-reverse;
 }
     .blinking-cursor {
       display: inline-block;
@@ -36,14 +36,13 @@
     
         body {
             font-family: Verdana, sans-serif;
-            margin: 0;
+	    margin: 0 0 20px 20px; /* Adjust margins as needed */
             padding: 0;
             height: auto;
         }
 
         h1 {
             text-align: left;
-            margin: 0 0 20px 20px; /* Adjust margins as needed */
             font-family: Arial, sans-serif;
 	    padding-top: 25px;
         }
@@ -92,18 +91,15 @@
 <body>
     <h1>Hello.</h1>
     <div class="parent">
-	    
-	<div class="bild" >
-    	<a href="sms:46708331921">
-        <img src="RQ.png" alt="" style="width: 200px; height: 200px; margin: 0 0 0 20px;">
-    </a>
-</div)
-	    
     	<div id="mess-container">
 		<span id="mess"></span>
 		<span class="blinking-cursor"></span>
     	</div>
-	    
+	<div class="bild" >
+    	<a href="sms:46708331921">
+        <img src="RQ.png" alt="" style="width: 200px; height: 200px; margin: 0 0 0 20px;">
+	    </a>
+		</div)
      </div>
 
 
