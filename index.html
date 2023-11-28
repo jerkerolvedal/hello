@@ -35,8 +35,8 @@
     .blinking-cursor {
       display: inline-block;
       width: 2px;
-      height: 16§px;
-      background-color: blue;
+      height: 16px;
+      color: blue;
       animation: blink 1s step-end infinite;
     }
     
@@ -46,11 +46,13 @@
             padding: 0;
             height: auto;
         }
-                footer {
-            font-family: Verdana, sans-serif;
-	    margin: 0 0 20px 20px; /* Adjust margins as needed */
-            padding: 0;
-            height: auto;
+        .footer {
+			font-family: Verdana, sans-serif;
+			height: auto;
+  			border: 2px solid black;
+  			border-radius: 12px;
+  			padding: 5px;
+}
         }
 
         h1 {
@@ -119,8 +121,12 @@
 </div>
 
 </body>
+
 <footer>
+    <div class="footer">
   <p>Author: Jerker Olvedal</p>
   <p><a href="mailto:jerker.olvedal@me.com">jerker.olvedal@me.com</a></p>
+</div>
 </footer>
+
 </html>
