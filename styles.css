@@ -8,14 +8,15 @@
 }
 
 /* Sender's (Your) style */
-.sender {
-    background-color: #4caf50;
+.senderbody {
+    background-color: #2196f3;
+    box-shadow: 0px 2px 3px 2px #9E9E9E80;
     color: #fff;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 /* Receiver's style */
-.receiver {
+.receiverfooter {
     background-color: #2196f3;
     box-shadow: 0px 2px 3px 2px #9E9E9E80;
     color: #fff;
