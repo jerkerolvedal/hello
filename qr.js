@@ -1,25 +1,17 @@
-<html>
-<head>
-<SCRIPT language="javascript">
-var a=0;
-var b=0;
-var cha="Text som scrollas á la skrivmaskin, om den här texten är lång bryts den enligt nedan och genererar nya rader. Det är ju bra.. blah, blah, blah, blah";
- 
-function bouge()
-{
-if (b<cha.length+10)
-{
-b++;document.all.mess.innerText=cha.substring(a,B);
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
-setTimeout ('bouge()',50) // TEXTENS HASTIGHET
-}
-</SCRIPT>
-</head>
-<body bgcolor="#3C3C3C"onload="bouge()">
-</DIV>
-<DIV ALIGN="left"><div id="mess"style="margin-left:100;margin-right:600;color:lime"></div></div>
-<BR><BR>
- 
-</form></DIV>
- 
-</body></html>
