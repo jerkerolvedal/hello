@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="jerker">
-    <meta name="description" content="a website">
-    <meta name="keywords" content="jerker; lol">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="qr.js" type="JavaScript" href="qr.js">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	
-    <title>Hello.</title> <!-- qr -->
-    
-    <style>
+  <meta charset="UTF-8">
+  <meta name="author" content="jerker">
+  <meta name="description" content="a website">
+  <meta name="keywords" content="jerker; lol">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="qr.js" type="JavaScript" href="qr.js">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>Hello.</title> <!-- qr -->
+
+  <style>
     @keyframes blink {
       0% {
         opacity: 1;
       }
+
       50% {
         opacity: 0;
       }
+
       100% {
         opacity: 1;
       }
     }
-     .parent {
-  	display: flex;
-  	flex-direction: row;
-	justify-content: flex-start;
-}
 
-.bild {
-	margin: 0px
-}
+    .parent {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .bild {
+      margin: 0px
+    }
 
     .blinking-cursor {
       display: inline-block;
@@ -43,84 +48,85 @@
       opascity: 50%;
       animation: blink 1s step-end infinite;
     }
-	    
-    body {
-            font-family: Verdana, sans-serif;
-            margin: 0px
-            padding: 0;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        
-    footer {
-            font-family: Arial, sans-serif;
-	    font-size: 10px;
-            position: relative;
-            bottom: 0px;
-	    left: 0px
-	    padding: 10px;
-	    text-align: center;
-	    Width: 100%;
-            }
 
-     .footer {
-			height: auto;
-  			border: 2px solid black;
-  			border-radius: 28px;
-        	width: auto;
-  			padding: 5px;
-            }
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0px padding: 0;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      position: relative;
+      bottom: 0px;
+      left: 0px padding: 10px;
+      text-align: center;
+      Width: 100%;
+    }
+
+    .footer {
+      height: auto;
+      border: 2px solid black;
+      border-radius: 28px;
+      width: auto;
+      padding: 5px;
+    }
 
     h1 {
-            text-align: left;
-            font-family: Arial, sans-serif;
-	    	padding-top: 25px;
-        	}
+      text-align: left;
+      font-family: Arial, sans-serif;
+      padding-top: 25px;
+    }
 
-        #mess-container {
-            margin: 5 /* Adjust margins as needed */
-            width: 50vw; /* Set the width to 50% of the viewport width */
-            position: relative;
-        }
+    #mess-container {
+      margin: 5
+        /* Adjust margins as needed */
+        width: 50vw;
+      /* Set the width to 50% of the viewport width */
+      position: relative;
+    }
 
-        #mess {
-            color: white;
-            font-family: Verdana, sans-serif;
-        }
+    #mess {
+      color: white;
+      font-family: Verdana, sans-serif;
+    }
 
-        a {
-            font-family: Verdana, sans-serif;
-        }
-    </style>
-    
-    <script>
-        var a = 0;
-        var b = 0;
-        var cha = "Vad kul att du hittat hit. Jag bygger vidare på denna hemsidan sedan November 2023 för att testa mina HTML kunskaper. Om du vill har några produkt eller designfrågor, dra mig ett meddelande. Sen skriver jag lite till så att vi får lite mer text.";
-        
-        function bouge() {
-            if (b < cha.length + 10) {
-                b++;
-                document.getElementById("mess").innerText = cha.substring(a, b);
-		}
-            setTimeout(bouge, 70); // TEXTENS HASTIGHET
-        }
+    a {
+      font-family: Verdana, sans-serif;
+    }
+  </style>
 
-        // Call the bouge function after the page has loaded
-        window.onload = function () {
-            bouge();
-        };
-        
+  <script>
+    var a = 0;
+    var b = 0;
+    var cha = "Vad kul att du hittat hit. Jag bygger vidare på denna hemsidan sedan November 2023 för att testa mina HTML kunskaper. Om du vill har några produkt eller designfrågor, dra mig ett meddelande. Sen skriver jag lite till så att vi får lite mer text.";
 
-        
-    </script>
+    function bouge() {
+      if (b < cha.length + 10) {
+        b++;
+        document.getElementById("mess").innerText = cha.substring(a, b);
+      }
+      setTimeout(bouge, 70); // TEXTENS HASTIGHET
+    }
+
+    // Call the bouge function after the page has loaded
+    window.onload = function () {
+      bouge();
+    };
+
+
+
+  </script>
 </head>
 
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">QRproject</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -138,7 +144,9 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Ett val</a></li>
             <li><a class="dropdown-item" href="#">Ett annat val</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="#">Ytterligare ett val</a></li>
           </ul>
         </li>
@@ -153,49 +161,59 @@
     </div>
   </div>
 </nav>
-	
-    <h1><button type="button" class="btn">Hello.</button></h1>
+
+<h1><button type="button" class="btn">Hello.</button></h1>
 
 <body>
-	
-    <div class="parent">
-	<div class="bild" >
-    	<a href="sms:46708331921">
+
+  <div class="parent">
+    <div class="bild">
+      <a href="sms:46708331921">
         <img src="RQ.svg" alt="" style="width: 27vw;">
-	    </a>
-        </div>
-	    <div class="message-box senderbody">
-	      <div id="mess-container">
-		<span id="mess"></span>
-		<span class="blinking-cursor"></span>
-    	</div>
-     </div>
-</div>
-	
-<div class="message-box receiverfooter">
-	Cool, vi säger så.
-</div>
- <h1 class="display-6">7 Ways To Avoid Walls Of Text</h1>
+      </a>
+    </div>
+    <div class="message-box senderbody">
+      <div id="mess-container">
+        <span id="mess"></span>
+        <span class="blinking-cursor"></span>
+      </div>
+    </div>
+  </div>
 
-  <p><strong>Narrow the column:</strong> There are various guidelines regarding the width of a text column. Depending on your font, font size, and page layout, a slightly wider or narrower column may be necessary. To determine a comfortable width, observe column widths on your favorite online media sources within context.</p>
+  <div class="message-box receiverfooter">
+    Cool, vi säger så.
+  </div>
+  <h1 class="display-6">7 Ways To Avoid Walls Of Text</h1>
 
-  <p><strong>Use headings:</strong> Headings serve multiple purposes for website content. They provide resting points for visitors' eyes, summarize content, and aid in skimming. When skimming, visitors should be able to understand the page's content and locate relevant information by reading the headings. (Headings are also crucial for SEO keywords).</p>
+  <p><strong>Narrow the column:</strong> There are various guidelines regarding the width of a text column. Depending on
+    your font, font size, and page layout, a slightly wider or narrower column may be necessary. To determine a
+    comfortable width, observe column widths on your favorite online media sources within context.</p>
 
-  <p><strong>Use visuals:</strong> Incorporate photos or visualized data like graphs to break up a wall of text. Visual content communicates quickly and complements written content effectively.</p>
+  <p><strong>Use headings:</strong> Headings serve multiple purposes for website content. They provide resting points
+    for visitors' eyes, summarize content, and aid in skimming. When skimming, visitors should be able to understand the
+    page's content and locate relevant information by reading the headings. (Headings are also crucial for SEO
+    keywords).</p>
 
-  <p><strong>Use lists:</strong> Lists simplify complex information, making it quick to comprehend. Skimming becomes effortless as information is logically organized around or in support of specific themes within the content.</p>
+  <p><strong>Use visuals:</strong> Incorporate photos or visualized data like graphs to break up a wall of text. Visual
+    content communicates quickly and complements written content effectively.</p>
 
-  <p><strong>Use shorter sentences and paragraphs:</strong> On the web, dense paragraphs with numerous sentences are outdated. To reduce text density, opt for paragraphs that are 2-3 sentences long.</p>
+  <p><strong>Use lists:</strong> Lists simplify complex information, making it quick to comprehend. Skimming becomes
+    effortless as information is logically organized around or in support of specific themes within the content.</p>
 
-  <p><strong>Blockquote your quotes:</strong> Utilize blockquotes, a style inherent in most website text editors, to add quote styling. This styling breaks the monotony of continuous paragraphs.</p>
+  <p><strong>Use shorter sentences and paragraphs:</strong> On the web, dense paragraphs with numerous sentences are
+    outdated. To reduce text density, opt for paragraphs that are 2-3 sentences long.</p>
 
-  <p><strong>Allow space:</strong> Ensure paragraphs and lines of text have sufficient space around them. Providing space is crucial for allowing website visitors room to breathe.</p>
+  <p><strong>Blockquote your quotes:</strong> Utilize blockquotes, a style inherent in most website text editors, to add
+    quote styling. This styling breaks the monotony of continuous paragraphs.</p>
+
+  <p><strong>Allow space:</strong> Ensure paragraphs and lines of text have sufficient space around them. Providing
+    space is crucial for allowing website visitors room to breathe.</p>
 
 
 </body>
 
 <footer>
-<p><small>Copyright 2023 © <a href="sms:46708331921">Jerker</a>. Alla rättigheter förbehållna</small></p>
+  <p><small>Copyright 2023 © <a href="sms:46708331921">Jerker</a>. Alla rättigheter förbehållna</small></p>
 </footer>
 
 </html>
