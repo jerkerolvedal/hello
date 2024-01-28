@@ -1,3 +1,5 @@
+<script async="true" src="https://www.vivino.com/external/vivino-widgets.js"></script>
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -14,6 +16,4 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-
-<script async="true" src="https://www.vivino.com/external/vivino-widgets.js"></script>
 }
