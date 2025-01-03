@@ -96,6 +96,31 @@
     a {
       font-family: Verdana, sans-serif;
     }
+
+    .article {
+      margin-bottom: 20px;
+    }
+
+    .article-title {
+      font-size: 20px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .article-title:hover {
+      text-decoration: underline;
+    }
+
+    .article-summary {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0 10px;
+    }
+
+    .article-body {
+      font-size: 14px;
+      color: #444;
+    }
   </style>
 
   <script>
@@ -116,9 +141,64 @@
       bouge();
     };
 
+    const articles = [
+      {
+        "title": "Johan Lind spår 2025",
+        "link": "https://ng.se/artiklar/johan-lind-spar-2025",
+        "summary": "Nöjesguidens krönikör Johan Lind hoppas att Farah Abadi blir cancelled.",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "published": "2025-01-03"
+      },
+      {
+        "title": "Jacob Wester spår 2025",
+        "link": "https://ng.se/artiklar/jacob-wester-spar-2025",
+        "summary": "Extremskidåkaren Jacob Wester tror att vi kommer låtsas tycka om dyra vinflaskor med priset skrivet i tjock vit tuschpenna.",
+        "body": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        "published": "2025-01-03"
+      },
+      {
+        "title": "Lykke recapar Instagramåret 2024",
+        "link": "https://ng.se/artiklar/lykke-recapar-instagramaret-2024",
+        "summary": "Krögarnas metoo, Haglöfsryggsäcken från helvetet och Sigge Eklund-hysterin präglade året.",
+        "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+        "published": "2025-01-03"
+      }
+    ];
+
+    function displayArticles() {
+      const articlesContainer = document.getElementById('articles');
+
+      articles.forEach(article => {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'article';
+
+        const articleLink = document.createElement('a');
+        articleLink.href = article.link;
+        articleLink.target = '_blank';
+        articleLink.className = 'article-title';
+        articleLink.innerText = article.title;
+        articleDiv.appendChild(articleLink);
+
+        const articleSummary = document.createElement('p');
+        articleSummary.className = 'article-summary';
+        articleSummary.innerText = article.summary;
+        articleDiv.appendChild(articleSummary);
+
+        const articleBody = document.createElement('p');
+        articleBody.className = 'article-body';
+        articleBody.innerText = article.body;
+        articleDiv.appendChild(articleBody);
+
+        articlesContainer.appendChild(articleDiv);
+      });
+    }
+
+    window.onload = function () {
+      bouge();
+      displayArticles();
+    };
   </script>
 </head>
-
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -212,10 +292,12 @@ jerker.olvedal på Vivino</a>
   <p><strong>Allow space:</strong> Ensure paragraphs and lines of text have sufficient space around them. Providing
     space is crucial for allowing website visitors room to breathe.</p>
 
+<div id="articles"></div>
+
 <div class="vivino-widget user-profile-widget" data-vivino-user-id="jerker.olvedal" data-vivino-widget-include-review="true" data-vivino-widget-layout="compact" data-vivino-widget-type="user">
 <a href="https://www.vivino.com/users/jerker.olvedal/latest" rel="follow" target="_blank">
 </a>
-</div>
+</div
 </body>
 
 <footer>
